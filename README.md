@@ -1,10 +1,12 @@
 ## NOTE
 
-I put in a significant amount of effort to Dockerize the project but unfortunately, I was not successful. Nonetheless, I am sharing the Dockerfile files I worked on below. When I couldn't get them to work using Dockerfiles, I followed the manual instructions outlined in the README and was able to accomplish the task this way.
+1.I put in a significant amount of effort to Dockerize the project but unfortunately, I was not successful. Nonetheless, I am sharing the Dockerfile files I worked on below. When I couldn't get them to work using Dockerfiles, I followed the manual instructions outlined in the README and was able to accomplish the task this way.
 
 Here are the Dockerfile files I used while attempting to Dockerize:
 
 <--- insert file directory and Dockerfile files here --->
+
+2.After pulling the project to your local environment, please delete the "output_data.json" file. I included this file as an example of the result generated when I ran the project myself. You will need to delete it, as following the specified steps will generate the file on your end as well.
 
 # Web Scraping and Kafka Integration Project
 
