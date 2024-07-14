@@ -1,0 +1,52 @@
+[
+    {
+        "name": "Bulbasaur",
+        "price": "63.00",
+        "stock": "45 in stock"
+    },
+    {
+        "name": "Ivysaur",
+        "price": "87.00",
+        "stock": "142 in stock"
+    },
+    {
+        "name": "Venusaur",
+        "price": "105.00",
+        "stock": "30 in stock"
+    },
+    {
+        "name": "Charmander",
+        "price": "48.00",
+        "stock": "206 in stock"
+    },
+    {
+        "name": "Charmeleon",
+        "price": "165.00",
+        "stock": "284 in stock"
+    },
+    {
+        "name": "Charizard",
+        "price": "156.00",
+        "stock": "31 in stock"
+    },
+    {
+        "name": "Squirtle",
+        "price": "130.00",
+        "stock": "178 in stock"
+    },
+    {
+        "name": "Wartortle",
+        "price": "123.00",
+        "stock": "24 in stock"
+    },
+    {
+        "name": "Blastoise",
+        "price": "76.00",
+        "stock": "88 in stock"
+    },
+    {
+        "name": "Caterpie",
+        "price": "73.00",
+        "stock": "40 in stock"
+    }
+]
