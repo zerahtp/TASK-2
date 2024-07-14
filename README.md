@@ -1,5 +1,3 @@
-# Web Scraping and Kafka Integration Project
-
 ## NOTE
 
 I put in a significant amount of effort to Dockerize the project but unfortunately, I was not successful. Nonetheless, I am sharing the Dockerfile files I worked on below. When I couldn't get them to work using Dockerfiles, I followed the manual instructions outlined in the README and was able to accomplish the task this way.
@@ -8,7 +6,7 @@ Here are the Dockerfile files I used while attempting to Dockerize:
 
 <--- insert file directory and Dockerfile files here --->
 
-
+# Web Scraping and Kafka Integration Project
 
 This project demonstrates how to scrape data from a web page, send it to a Kafka topic, save the data from Kafka to a file, and provide a REST API to access the saved data. The project is divided into three main parts:
 
