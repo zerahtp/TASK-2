@@ -1,5 +1,12 @@
 # Web Scraping and Kafka Integration Project
-This project demonstrates how to scrape data from a web page, send it to a Kafka topic, save the data from Kafka to a file, and provide a REST API to access the saved data. The project is divided into three main parts: scraping and sending data to Kafka, consuming data from Kafka and saving to a file, and serving the data via a REST API.
+This project demonstrates how to scrape data from a web page, send it to a Kafka topic, save the data from Kafka to a file, and provide a REST API to access the saved data. The project is divided into three main parts:
+
+**1.Scraping and Sending Data to Kafka**
+
+**2.Consuming Data from Kafka and Saving to a File**
+
+**3.Serving the Data via a REST API**
+
 
 ## Prerequisites
 Before running the project, ensure you have the following installed:
