@@ -75,20 +75,35 @@ cd <repository-directory>
 ```
 
 **2.Set Up Virtual Environment:**
+
+Create a virtual environment to isolate the project's dependencies and activate it.
 ```
 python -m venv myenv
 myenv\Scripts\activate
 ```
 
 **3.Start Kafka and Zookeeper:**
+
+Use Docker Compose to start Kafka and Zookeeper. This step ensures that both services are up and running, which are required for messaging in this project.
 ```
 docker-compose up -d
+```
+Verify that the Kafka and Zookeeper containers are running.You should see containers for both Kafka and Zookeeper listed.
+```
 docker ps
+```
+Replace "<Kafka_Container_ID>" with the actual container ID for Kafka, which you can get from the "docker ps" command.
+```
 docker exec -it <Kafka_Container_ID> bash
+```
+Inside the Kafka container, create a topic named test_topic:This command creates a Kafka topic with the specified configurations.
+```
 kafka-topics.sh --create --topic test_topic --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1
 ```
 
 **4.Install Required Python Packages:**
+
+Install the required Python packages in your virtual environment. These packages include libraries for web scraping, Kafka integration, and setting up the Flask web server.
 ```
 pip install requests pandas
 pip install beautifulsoup4
@@ -96,6 +111,9 @@ pip install kafka-python
 ```
 
 ## Running the Scripts
+
+After setting up your environment and ensuring Kafka is running, you can execute the Python scripts in the following order:
+
 **1.Scrape Data and Send to Kafka:**
 Run the script to scrape data from the web page and send it to the Kafka topic test_topic.
 ```
