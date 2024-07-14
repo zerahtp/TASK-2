@@ -18,6 +18,39 @@ This project demonstrates how to scrape data from a web page, send it to a Kafka
 
 **3.Serving the Data via a REST API**
 
+## 1. Scraping and Sending Data to Kafka
+In this section, we use Python to scrape product data from a webpage and send the data to a Kafka topic. Below, I explain the **untitled1.py** file that performs this task.
+
+Scrape Data:
+
+- We use the requests library to fetch the content of the web page.
+- The BeautifulSoup library is used to parse the HTML and extract product details such as name, price, and stock status.
+
+Send Data to Kafka:
+
+- A Kafka producer is configured using the kafka-python library.
+- The extracted data is sent to a Kafka topic named test_topic at 1-second intervals.
+
+## 2. Consuming Data from Kafka and Saving to a File
+This part involves consuming the data from the Kafka topic and saving it to a JSON file. Below, I explain the **untitled2.py** file that performs this task.
+
+Configure Kafka Consumer:
+
+- The kafka-python library is used to configure a Kafka consumer.
+
+Consume and Save Data:
+
+- The consumer reads messages from the test_topic.
+- The data is saved to a file named output_data.json.
+
+## 3. Serving the Data via a REST API
+This part sets up a simple REST API using Flask to serve the data saved in the JSON file. Below, I explain the **untitled3.py** file that performs this task.
+
+Set Up Flask Application:
+
+- The Flask framework is used to create a simple web server.
+- The server provides an endpoint /data to return the data from the output_data.json file.
+
 
 ## Prerequisites
 Before running the project, ensure you have the following installed:
